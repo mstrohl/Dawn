@@ -1,8 +1,10 @@
 <div class="cover container">
     <div class="cover-content">
+         {{#if @site.logo}}
             <div class="cover-icon">
-                <img class="cover-icon-image" src="{{@site.icon}}" alt="{{@site.title}}">
+                <img class="cover-icon-image" src="{{@site.logo}}" alt="{{@site.title}}">
             </div>
+        {{/if}}
         {{#if @site.description}}
             <div class="cover-description">{{@site.description}}</div>
         {{/if}}
